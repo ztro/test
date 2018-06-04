@@ -1,5 +1,5 @@
 <?php
-error_reporting(1);
+error_reporting(0);
 session_start();
 include('database_connection.php');
 if(!isset($_SESSION["id"])) {header("location:login.php");}
@@ -51,9 +51,6 @@ if(!isset($_SESSION["id"])) {header("location:login.php");}
 	        
 	         echo "CSV File telah berhasil di Import ke Database. Total Item = ". $t_item ;
 						
-				
-		 	
-			
 		 }
 	}
 	else
