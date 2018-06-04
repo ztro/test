@@ -154,7 +154,7 @@ $(document).ready(function(){
 	$('#id_submit').click(function(){
 		var tgl = $('#absen_date').val();
 		var dept = $('#dept').val();
-		//alert(tgl+'>'+dept);
+		
 		$.ajax({
 			url:"absensi_fetch1.php",
 			method:"POST",
@@ -162,7 +162,7 @@ $(document).ready(function(){
 			dataType:"json",
 			success:function(datax)
 			{
-				//alert(datax);
+				
 				$('#id_submit').html(' Search ');
 				userdataTable = $('#user_data').DataTable({
 					"destroy": true,
