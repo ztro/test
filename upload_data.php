@@ -15,11 +15,7 @@
 					<div class="panel-body">
 						<div  id="form-login">
 							<form id = "form_upload" class="form-inline" action="1mp0rt.php" method="post" name="upload_excel" enctype="multipart/form-data">
-							<?php	/*<label>CSV File:</label>
-								<input type="file" name="file" id="file" class="input-large"></br>
-								<input type="submit" id="v_submit" name="import" class="btn btn-primary button-loading" value="Upload">
-							*/ ?>
-								<div class="input-group">
+							<div class="input-group">
 									<label class="input-group-btn">
 										<span class="btn btn-danger btn-md">
 											Browse&hellip; <input type="file" id="media" name="file" style="display: none;" required>
@@ -55,8 +51,7 @@ $(document).ready(function () {
 			{
 				$('#alert_action').fadeIn(1000).html('<div class="alert alert-success">'+data+'</div>');
 				$("#v_loading").html('');
-				//$('#alert_action').fadeOut(3000);
-				//$("#nm_file").val('');
+				
 			}
 		});
 	}
@@ -90,7 +85,6 @@ $(document).ready(function () {
 	  
 	});
 	</script>
-
 <?php
 include('footer.php');
 ?>
